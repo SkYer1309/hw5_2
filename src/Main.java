@@ -41,6 +41,23 @@ public class Main {
         } else {
             System.out.println("Доставки нет ");
         }
-
+        System.out.println(" \n Задание 5");
+        byte monthNumber = 9;
+        switch (monthNumber) {
+            case 12, 1, 2:
+                System.out.println(monthNumber + "-й месяц принадлежит к сезону ЗИМА");
+                break;
+            case 3, 4, 5:
+                System.out.println(monthNumber + "-й месяц принадлежит к сезону ВЕСНА");
+                break;
+            case 6, 7, 8:
+                System.out.println(monthNumber + "-й месяц принадлежит к сезону ЛЕТО");
+                break;
+            case 9, 10, 11:
+                System.out.println(monthNumber + "-й месяц принадлежит к сезону ОСЕНЬ");
+                break;
+            default:
+                System.out.println();
+        }
     }
 }
