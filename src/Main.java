@@ -31,5 +31,16 @@ public class Main {
             System.out.println(year + " год не является високосным");
         }
         System.out.println(" \n Задание 4");
+        short deliveryDistance = 150;
+        if (deliveryDistance >= 0 && deliveryDistance <= 20) {
+            System.out.println("Потребуется дней: " + 1);
+        } else if (deliveryDistance > 20 && deliveryDistance <= 60) {
+            System.out.println("Потребуется дней: " + 2);
+        } else if (deliveryDistance > 60 && deliveryDistance <= 100) {
+            System.out.println("Потребуется дней: " + 3);
+        } else {
+            System.out.println("Доставки нет ");
+        }
+
     }
 }
