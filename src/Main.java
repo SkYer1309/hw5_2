@@ -1,24 +1,31 @@
 
 public class Main {
     public static void main(String[] args) {
-        byte clientOS = 1;
+        byte clientOS = 0;
 
         System.out.println("\n Задание 1");
         if (clientOS == 0) {
             System.out.println("Установите версию приложения для iOS по ссылке:");
         } else if (clientOS == 1) {
             System.out.println("Установите версию приложения для Android  по ссылке:");
+        } else {
+            System.out.println("Недопустимый ввод данных");
         }
         System.out.println(" \n Задание 2");
-        short clientDeviceYear = 2016;
+
+        short clientDeviceYear = 2020;
         if (clientOS == 0 && clientDeviceYear < 2015) {
             System.out.println("Установите облегченную версию приложения для iOS по ссылке:");
         } else if (clientOS == 1 && clientDeviceYear < 2015) {
             System.out.println("Установите облегченную версию приложения для Android по ссылке:");
+        } else if (clientOS == 0 && clientDeviceYear >= 2015) {
+            System.out.println("Установите версию приложения для iOS по ссылке:");
+        } else if (clientOS == 1 && clientDeviceYear >= 2015) {
+            System.out.println("Установите версию приложения для Android  по ссылке:");
         } else {
-            System.out.println("Установите версию приложения для " + (clientOS == 0 ? "iOS" : "Android")
-                    + " по ссылке:");
+            System.out.println("Недопустимый ввод данных");
         }
+
         System.out.println(" \n Задание 3");
         int year = 2004;
         if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
@@ -41,7 +48,7 @@ public class Main {
         }
         System.out.println("Доставка займет дней: " + deliveryDays);
         System.out.println(" \n Задание 5");
-        byte monthNumber = 13;
+        byte monthNumber = 10;
         if (monthNumber > 0 && monthNumber <= 12) {
             switch (monthNumber) {
                 case 12, 1, 2:
